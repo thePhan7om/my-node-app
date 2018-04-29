@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{welcomeMessage}}</title>
+</head>
+<body>
+{{> header}}
+<h3> {{screamIt welcomeMessage}}</h3>
+<p> What is up? -- don't know myself I am {{getAuthor}}</p>
+<p> I Like:</p>
+<ul class="people_list">
+    {{#each likes}}
+        <li>{{this}}</li>
+    {{/each}}
+</ul>
+{{> footer}}
+</body>
+</html>
